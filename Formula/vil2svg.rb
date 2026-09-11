@@ -1,8 +1,8 @@
 class Vil2svg < Formula
   desc "Draw a Vial .vil keymap as an SVG"
   homepage "https://github.com/rgsoda/vil2svg"
-  url "https://github.com/rgsoda/vil2svg/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "4347730205f20b591178ec50f7de81d0d9fcbafcc3f68922d3e4ce3c42b83fff"
+  url "https://github.com/rgsoda/vil2svg/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "a8fb03dae6b36ecbbb31339941e82ea5138346ffb3d0b17c45bbfa5cc4eceeb9"
   head "https://github.com/rgsoda/vil2svg.git", branch: "master"
 
   depends_on "rust" => :build
