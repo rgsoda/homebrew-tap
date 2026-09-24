@@ -2,33 +2,37 @@
 class Jack < Formula
   desc "Terminal text editor with tree-sitter highlighting and vim keys"
   homepage "https://github.com/rgsoda/jack-editor"
-  version "0.13.3"
+  version "0.13.4"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.3/jack-0.13.3-aarch64-apple-darwin.tar.gz"
-      sha256 "e29a5d17273702c774ac452eda30458745aaad242a4a49309554c57e61fa5248"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-aarch64-apple-darwin.tar.gz"
+      sha256 "9a2c8263c1f9151974dd093025b363af783bd5b7e2776947dc10cc979cc5cbd4"
     end
     on_intel do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.3/jack-0.13.3-x86_64-apple-darwin.tar.gz"
-      sha256 "06ca9f1f1bf2a278f3885bd07a882c08c51dfbd9f47f06a5b42eb8b4f62cd8d6"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-x86_64-apple-darwin.tar.gz"
+      sha256 "15e844f5e8359ec163942027abcd60d7ef1e2e71d46b2500517fe1c699eb1641"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.3/jack-0.13.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f8a87fdda814d20f5472e6d8591b08042d6beb0bfa6c935a5d03b3e6bc634a01"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7a10653d5796f3aeb718675132c075f7a903296cc20e79e6e081852b9cc897e8"
     end
     on_intel do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.3/jack-0.13.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e36ec24711955d173179d2e3c3410bbfb187cf28656b023455ec5cf6893ff09b"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7706010aea0d3acbd737e3d182b98e92c9821f96fefa9c41fc34d45c96e5b856"
     end
   end
 
   def install
     bin.install "jack"
+    # The icon, the desktop entry and the two scripts that install them: a
+    # windowed editor wants a launcher entry as well as a binary, and a
+    # bottled install has nowhere else to get them from.
+    pkgshare.install "packaging/icon", "packaging/jack.desktop", "packaging/linux", "packaging/macos"
   end
 
   test do
