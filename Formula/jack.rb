@@ -2,28 +2,28 @@
 class Jack < Formula
   desc "Terminal text editor with tree-sitter highlighting and vim keys"
   homepage "https://github.com/rgsoda/jack-editor"
-  version "0.13.4"
+  version "0.13.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-aarch64-apple-darwin.tar.gz"
-      sha256 "9a2c8263c1f9151974dd093025b363af783bd5b7e2776947dc10cc979cc5cbd4"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.5/jack-0.13.5-aarch64-apple-darwin.tar.gz"
+      sha256 "87d2e52cade0c38fb61ad815aee4b9068968cc6bf394e181b1eeaf5bf5cba56e"
     end
     on_intel do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-x86_64-apple-darwin.tar.gz"
-      sha256 "15e844f5e8359ec163942027abcd60d7ef1e2e71d46b2500517fe1c699eb1641"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.5/jack-0.13.5-x86_64-apple-darwin.tar.gz"
+      sha256 "5a7a41775d685d05ba03d1642cce53c478304bb7805c183638da23dcea044d31"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7a10653d5796f3aeb718675132c075f7a903296cc20e79e6e081852b9cc897e8"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.5/jack-0.13.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9c49c97c848265819fdb85e8bdd9e9dcb97fd95f3b2d7b20af70e6963b99eb63"
     end
     on_intel do
-      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.4/jack-0.13.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7706010aea0d3acbd737e3d182b98e92c9821f96fefa9c41fc34d45c96e5b856"
+      url "https://github.com/rgsoda/jack-editor/releases/download/v0.13.5/jack-0.13.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a7bed810ac35465d45608d29f531616033a8948425647f813395410c12eb3d19"
     end
   end
 
